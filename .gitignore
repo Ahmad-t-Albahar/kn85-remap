@@ -1,0 +1,5 @@
+# Your own remaps list and its backups stay on your computer
+kn85-remaps.json
+kn85-remaps*.json
+*.tmp
+__pycache__/
