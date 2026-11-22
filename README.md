@@ -37,13 +37,13 @@ When the window opens, the tool checks for the keyboard. If it is not connected,
 
 ## Using the window
 
-Press Tab to move through these controls, in this order:
+Press Tab and Shift+Tab to move through these controls, in this order. The buttons also have Alt shortcuts, listed with each one.
 
-1. Layer, a group of two radio buttons (Alt+L). Top layer is a key pressed on its own. Fn layer is a key pressed while holding Fn. Use the arrow keys to choose.
-2. Physical key, a list of every key on the KN85 (Alt+K). Type a letter to jump, or use the arrow keys. Fn itself is not in the list, because it must stay Fn.
-3. Sends, a list of what the key should send (Alt+S). The first item is "Default (no change)". When you move to a key or change the layer, this list jumps to what that key sends now. So choose the layer and the key first, and Sends last.
+1. Layer, a group of two radio buttons. Top layer is a key pressed on its own. Fn layer is a key pressed while holding Fn. Use the arrow keys to choose.
+2. Physical key, a list of every key on the KN85. Type a letter to jump, or use the arrow keys. Fn itself is not in the list, because it must stay Fn.
+3. Sends, a list of what the key should send. The first item is "Default (no change)". When you move to a key or change the layer, this list jumps to what that key sends now. So choose the layer and the key first, and Sends last.
 4. Add or change remap button (Alt+A). Adds your choice to the saved list and puts you on that item, so NVDA reads it. If you chose "Default (no change)", the key's remap is removed.
-5. Saved remaps list (Alt+R), for example "Fn layer: Right Ctrl sends Applications (context menu)". Press Delete to remove the selected remap. A message confirms what was removed.
+5. Saved remaps list, for example "Fn layer: Right Ctrl sends Applications (context menu)". Press Delete to remove the selected remap. A message confirms what was removed.
 6. Remove selected remap button (Alt+M).
 7. Apply to keyboard button (Alt+P). Sends the whole saved list to the keyboard. A message tells you when it is done or if it failed. Changes are not sent until you press Apply.
 8. Restore keyboard defaults button (Alt+D). Asks first. If you choose Yes, every key does its normal job again and the saved list is emptied. First, a backup of the list is saved with a name like kn85-remaps.backup-20261122-153000.json. To get it back later, rename the backup to kn85-remaps.json while the tool is closed.

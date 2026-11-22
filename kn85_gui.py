@@ -63,18 +63,18 @@ class MainFrame(wx.Frame):
 
         # Creation order is tab order and also gives each control its label.
         self.layer = wx.RadioBox(
-            panel, label="&Layer",
+            panel, label="Layer",
             choices=["Top layer (key pressed on its own)",
                      "Fn layer (key pressed while holding Fn)"],
             majorDimension=1, style=wx.RA_SPECIFY_COLS)
         s.Add(self.layer, 0, wx.EXPAND | wx.ALL, 8)
 
-        s.Add(wx.StaticText(panel, label="Physical &key:"), 0, wx.LEFT | wx.TOP, 8)
+        s.Add(wx.StaticText(panel, label="Physical key:"), 0, wx.LEFT | wx.TOP, 8)
         self.key_list = wx.ListBox(panel, choices=[n for _, n in self.keys],
                                    style=wx.LB_SINGLE)
         s.Add(self.key_list, 1, wx.EXPAND | wx.LEFT | wx.RIGHT, 8)
 
-        s.Add(wx.StaticText(panel, label="&Sends:"), 0, wx.LEFT | wx.TOP, 8)
+        s.Add(wx.StaticText(panel, label="Sends:"), 0, wx.LEFT | wx.TOP, 8)
         self.target_list = wx.ListBox(
             panel, choices=[DEFAULT_LABEL] + [target_label(u, n) for u, n in p.TARGETS],
             style=wx.LB_SINGLE)
@@ -83,7 +83,7 @@ class MainFrame(wx.Frame):
         self.add_btn = wx.Button(panel, label="&Add or change remap")
         s.Add(self.add_btn, 0, wx.ALL, 8)
 
-        s.Add(wx.StaticText(panel, label="Saved &remaps:"), 0, wx.LEFT | wx.TOP, 8)
+        s.Add(wx.StaticText(panel, label="Saved remaps:"), 0, wx.LEFT | wx.TOP, 8)
         self.remap_list = wx.ListBox(panel, style=wx.LB_SINGLE)
         s.Add(self.remap_list, 1, wx.EXPAND | wx.LEFT | wx.RIGHT, 8)
 

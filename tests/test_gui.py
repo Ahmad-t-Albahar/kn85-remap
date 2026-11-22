@@ -102,7 +102,7 @@ class GuiTest(unittest.TestCase):
             if "&" in label.replace("&&", ""):
                 letters.append(label[label.index("&") + 1].lower())
         self.assertEqual(len(letters), len(set(letters)), letters)
-        self.assertEqual(len(letters), 10)
+        self.assertEqual(sorted(letters), sorted("ampdce"))
 
     def test_tab_order(self):
         f = self.f
