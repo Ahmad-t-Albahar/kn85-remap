@@ -2,9 +2,13 @@
 
 A small, screen-reader-friendly tool to remap keys on the Kisnt KN85 keyboard. It works with NVDA and the keyboard alone.
 
-The vendor's own driver app cannot be used with a screen reader. This tool does the same key remapping with ordinary Windows controls that NVDA reads.
+## Why I made this
 
-The most common use is to give the keyboard an Applications (context menu) key. The KN85 has none, and its Fn key never reaches Windows, so NVDA cannot use it. For example, you can set Fn + right Ctrl to send the Applications key.
+I made this app because Kisnt's official app is not accessible with NVDA, and it requires a mouse to remap keys.
+
+The main reason I built it is that I wanted to use the Fn key to get an Applications key, instead of pressing Shift+F10. I installed Kisnt's official app, didn't like it, and made this instead. With it, I successfully remapped Fn + right Ctrl to the Applications key.
+
+I decided to release it because I know that others might run into the same problem I faced. In the future, it may grow into a toolkit that supports keyboards from other brands too.
 
 ## What you need
 
